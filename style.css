@@ -1,0 +1,380 @@
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+
+  font-size: 18px;
+
+  --open-sans: "Open Sans", sans-serif;
+  --poppins: "Poppins", sans-serif;
+
+  --normal: 400;
+  --medio: 600;
+  --negrito: 700;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: var(--very-pale-cyan);
+
+  padding: 1rem;
+}
+
+.cabecalho__img {
+  max-width: 165px;
+}
+
+.cabecalho__btn {
+  background-color: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px var(--grayish-blue);
+
+  color: var(--very-dark-cyan);
+
+  font-family: var(--poppins);
+
+  padding: 0.5rem 2rem;
+}
+
+.main__conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botao--hover:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.chamada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-image: url("/images/bg-hero-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: var(--very-pale-cyan);
+
+  text-align: center;
+
+  padding-bottom: 2rem;
+
+  width: 100%;
+}
+
+.chamada__descricao {
+  padding: 2rem 1rem 0 1rem;
+}
+
+.chamada__titulo {
+  color: var(--very-dark-cyan);
+  font-family: var(--open-sans);
+  font-size: 1.5rem;
+  font-weight: var(--negrito);
+
+  line-height: 2rem;
+}
+
+.chamada_texto {
+  color: var(--very-dark-cyan);
+  font-family: var(--open-sans);
+  font-size: 1rem;
+  font-weight: var(--normal);
+
+  line-height: 1.1rem;
+
+  padding-top: 1rem;
+}
+
+.chamada__img {
+  width: 80%;
+  max-width: 300px;
+}
+
+.chamada__btn {
+  color: white;
+
+  background-color: var(--pink);
+
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px var(--grayish-blue);
+
+  font-family: var(--poppins);
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  padding: 0.5rem 3rem;
+}
+
+.card {
+  width: auto;
+
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem var(--grayish-blue);
+
+  text-align: center;
+
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.card__img {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.card__titulo {
+  font-family: var(--poppins);
+  font-weight: var(--negrito);
+  font-size: 1.2rem;
+
+  color: var(--very-dark-cyan);
+
+  margin-top: 2rem;
+}
+
+.card__texto {
+  color: var(--grayish-blue);
+
+  font-family: var(--open-sans);
+  font-weight: var(--medio);
+  font-size: 0.7rem;
+
+  line-height: 1.05rem;
+
+  margin-top: 1.1rem;
+}
+
+.card__especial {
+  transform: translatey(50%);
+}
+
+.card__titulo--esp {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.chamada__btn--esp {
+  margin: 0;
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--very-dark-cyan);
+
+  color: white;
+
+  padding-top: 7rem;
+  padding-left: 1rem;
+}
+
+.rodape__logo {
+  margin-bottom: 2rem;
+}
+
+.endereco {
+  margin-bottom: 3rem;
+}
+
+.rodape__endereco,
+.rodape__telefone,
+.rodape__email {
+  font-size: 1rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.rodape__endereco::before {
+  content: "";
+  background: url("/images/icon-location.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  width: 32px;
+  height: 32px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.rodape__telefone::before {
+  content: "";
+  background: url("/images/icon-phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  width: 32px;
+  height: 32px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.rodape__email::before {
+  content: "";
+  background: url("/images/icon-email.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  width: 32px;
+  height: 32px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.lista__contato {
+  margin-bottom: 1rem;
+}
+
+.item__contato {
+  margin-bottom: 1rem;
+}
+
+.lista__rede--social {
+  display: inline-flex;
+  justify-content: center;
+
+  margin-bottom: 3rem;
+}
+
+.item__rede--social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+
+  border: 1px solid white;
+  border-radius: 999px;
+
+  margin-right: 1rem;
+}
+
+.item__rede--social:hover {
+  cursor: pointer;
+}
+
+.link--rede-social {
+  font-size: 1rem;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .cabecalho {
+    padding: 3rem 8rem;
+  }
+
+  .cabecalho__img {
+    max-width: 500px;
+  }
+
+  .chamada {
+    height: 450px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+  }
+
+  .chamada__descricao {
+    width: 25%;
+    text-align: left;
+  }
+
+  .chamada__img {
+    max-width: 40%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    text-align: left;
+    height: 50vh;
+
+    padding-left: 10rem;
+  }
+
+  .card__invertido {
+    flex-direction: row;
+  }
+
+  .card__img {
+    width: 30%;
+  }
+
+  .card__descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 50%;
+  }
+
+  .card__titulo {
+    font-size: 3.5rem;
+  }
+
+  .card__texto {
+    font-size: 1.7rem;
+    font-weight: 400;
+
+    line-height: 2.5rem;
+  }
+
+  .card__especial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2rem;
+    width: 60vw;
+    height: 30vh;
+  }
+
+  .card__titulo--esp {
+    font-size: 2.8rem;
+    padding-bottom: 2rem;
+  }
+
+  .chamada__btn--esp {
+    font-size: 1.5rem;
+    border-radius: 999px;
+    padding: 2rem 5rem;
+  }
+
+  .rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15rem 8rem 2rem 8rem;
+  }
+
+  .lista__rede--social {
+    align-self: flex-end;
+  }
+}
